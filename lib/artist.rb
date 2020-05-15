@@ -1,8 +1,9 @@
 require 'pry'
 
 class Artist
-  extend Memorable
-  inlcude Paramble
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
+  include Paramble
   attr_accessor :name
   attr_reader :songs
 
